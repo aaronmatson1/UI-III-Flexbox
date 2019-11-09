@@ -76,7 +76,6 @@ h3{
 .container{
 	width: 880px;
 	margin:auto;
-	border: red solid;
 }
 
 .header{
@@ -107,10 +106,26 @@ nav a{
 	padding-top: 35px;
 }
 
+.header h2{
+	padding-top: 35px;
+}
+
 /*.header .row{
 	margin-top:50px;
 } */
 
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
 .row .column button{
 	margin:0 auto;
@@ -140,24 +155,64 @@ nav a{
 	padding: 10px;
 }
 
-.row {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 100%;
+.container-1{
+	display: flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+	border-bottom: solid black 0.5px;
 }
 
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
+.item{
+	border:1px black solid;
+	padding:10px;
+	background-color: #E5E5E5;
+	width:44.5%;
+	margin:20px;
+
 }
+
 
 
 .section-2{
 	border-bottom: solid black 0.5px;
 	margin-top:25px;
 	margin-bottom:25px;
+}
+
+.container-2{
+	display: flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+}
+
+.item-2{
+	width:44.5%;
+	margin:20px;
+	padding:10px;
+}
+
+.item-2 img{
+	margin: -6px;
+	height: 275px;
+}
+
+.container-2 li{
+	 list-style-type: square;
+}
+
+.container-2 ol{
+	padding-left: 45px;
+  padding-top: 10px;
+  line-height: initial;
+}
+
+button{
+	background-color: #f1f1f1;
+  border: #808080 solid 2px;
+  border-radius: 5px;
+  margin: 15px 0;
+  padding: 10px;
+	width:inherit;
 }
 
 footer p{
